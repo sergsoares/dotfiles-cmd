@@ -55,6 +55,7 @@ doskey gi      = git init
 doskey ga      = git add $*
 doskey gb      = git branch $*
 doskey gcm     = git commit -m $*
+doskey gcmsg   = git commit -m $*
 doskey gc!     = git commit $*
 doskey gco     = git checkout $*
 doskey gfa     = git fetch --all
