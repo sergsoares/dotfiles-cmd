@@ -45,8 +45,6 @@ doskey ts      = mkdir $* $T cd $* $T subl .
 doskey takes   = mkdir $* $T cd $* $T subl .
 
 doskey e       = explorer $*
-::doskey md        = mkdir $*
-::doskey rd        = rmdir $*
 
 :: Ag 
 doskey ag      = ag --ignore=venv $*
@@ -80,15 +78,30 @@ doskey act      = venv\Scripts\activate
 doskey activate = venv\Scripts\activate
 doskey deac     = deactivate 
 
-:: Web Shortcuts
-doskey gist     = start "" https://gist.github.com
+:: Js
+doskey npmi = npm install
 
-:: Mixin
-doskey clone    = git clone $1 .
-doskey edit     = subl %USERPROFILE%\Documents\doskey
+:: Web Shortcuts
+doskey gist       = start "" https://gist.github.com
+doskey lobste.rs  = start "" https://lobste.rs
+doskey hackernews = start "" https://news.ycombinator.com
+doskey todoist    = start "" https://todoist.com
 
 :: Easier navigation
 doskey ..    = cd ..\$*
 doskey ...   = cd ..\..\$*
 doskey ....  = cd ..\..\..\$*
 doskey ..... = cd ..\..\..\..\$*
+
+:: Mixin
+doskey clone    = git clone $1 .
+doskey edit     = subl %USERPROFILE%\Documents\doskey
+doskey jdocuments = cd %USERPROFILE%\Documents
+doskey jprojects  = cd %USERPROFILE%\projects
+doskey jaws       = cd %USERPROFILE%\.aws
+doskey jssh       = cd %USERPROFILE%\.aws
+doskey jnotes     = cd %USERPROFILE%\Dropbox\notes
+doskey notes      = subl %USERPROFILE%\Dropbox\notes
+doskey typora     = "C:\Program Files\Typora\Typora.exe" $*
+
+
