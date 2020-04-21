@@ -62,6 +62,7 @@ doskey gfa     = git fetch --all
 doskey gg      = git gui citool
 doskey gpull   = git pull origin $*
 doskey gpush   = git push origin $*
+doskey gpo     = git push origin $*
 doskey gm      = git merge $*
 doskey gra     = git remote add $*
 doskey gst     = git status
